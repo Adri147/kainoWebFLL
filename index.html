@@ -20,7 +20,7 @@
                 <li><a href="">Contemporary</a></li>
                 <li><a href="">Affordable</a></li>
             </ul>
-            <button type="button"><span></span></button>
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
         </nav>
 
         <div class="lamp-container">
@@ -32,9 +32,21 @@
             <h1>TITULO <br> TITULO TITULO</h1>
             <p>Subtitulo aslkalsaklskalsalskaskalkalskalsklaksla</p>
             <a href="">link</a>
+            <div class="control">
+                <p>04</p>
+                <div class="line"><span></span></div>
+                <p>05</p>
+            </div>
         </div>
 
     </div>
 
+<script>
+    var btn = document.getElementById("btn");
+
+    function toggleBtn(){
+        btn.classList.toggle(".active");
+    }
+</script>
 </body>
 </html>
